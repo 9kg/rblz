@@ -16,6 +16,12 @@
         callback: callback_name
     });
 
+- web端调用原生的Facebook登录，第一个参数是回调函数名称
+
+	native.login_facebook({
+        callback: callback_name
+    });
+
 - web端调用原生的剪切板操作，第一个参数是复制内容，第二个参数是回调函数名称
 
 	native.copy({
@@ -24,3 +30,10 @@
     });
 
 - （其他遇到再加）
+
+
+登录接口
+0：    @"status”:@(0),@“msg”:@“失败信息”
+1：    @"status":@(1),@"msg":@"成功"
+2：    @"status”:@(2),@“msg”:@“用户返回”
+3：    @"status”:@(3),@“msg”:@“已登录”
