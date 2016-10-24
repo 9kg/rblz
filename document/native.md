@@ -1,3 +1,9 @@
+- app调用web页面loading动画
+
+	base.addLoading();
+- app删除web页面loading动画
+
+	base.removeLoading();
 - 原生应用进入每一个页面调用一下web端的render方法，并传参
 
 	render(json);
