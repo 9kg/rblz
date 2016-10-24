@@ -4,6 +4,15 @@
 - app删除web页面loading动画
 
 	base.removeLoading();
+- app调用web页面下载进度条,参数arg是1到100之间的数字
+
+	progress(arg);
+- app调用web页面下载失败对话框
+
+	upload_fail();
+- web页面调用app下载静态文件
+
+	window.native.upload();
 - 原生应用进入每一个页面调用一下web端的render方法，并传参
 
 	render(json);
