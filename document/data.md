@@ -24,82 +24,84 @@ personal`个人中心页`
 
 redeem_records`兑换记录页`
 -
-    [{
-        log_date: '2016-11-11',
-        log_content: [{
-            status: 1,
-            goods: 'iTunes充值卡',
-            apply_time: '2016-11-11 10:11:11',
-            review_time: '2016-11-12 09:21:03',
-            msg: '45678842433',
-            points: '50'
+    {
+        data: [{
+            log_date: '2016-11-11',
+            log_content: [{
+                status: 1,
+                goods: 'iTunes充值卡',
+                apply_time: '2016-11-11 10:11:11',
+                review_time: '2016-11-12 09:21:03',
+                msg: '45678842433',
+                point: '50'
+            }, {
+                status: -1,
+                goods: 'iTunes充值卡',
+                apply_time: '2016-11-11 10:11:11',
+                review_time: '2016-11-12 09:21:03',
+                msg: '您的设备存在异常，请与我们的客服联系~',
+                point: '50'
+            }, {
+                status: 0,
+                goods: 'iTunes充值卡',
+                apply_time: '2016-11-11 10:11:11',
+                review_time: '2016-11-12 09:21:03',
+                msg: '兑换中...',
+                point: '50'
+            }]
         }, {
-            status: -1,
-            goods: 'iTunes充值卡',
-            apply_time: '2016-11-11 10:11:11',
-            review_time: '2016-11-12 09:21:03',
-            msg: '您的设备存在异常，请与我们的客服联系~',
-            points: '50'
-        }, {
-            status: 0,
-            goods: 'iTunes充值卡',
-            apply_time: '2016-11-11 10:11:11',
-            review_time: '2016-11-12 09:21:03',
-            msg: '兑换中...',
-            points: '50'
+            log_date: '2016-11-10',
+            log_content: [{
+                status: 1,
+                goods: 'iTunes充值卡',
+                apply_time: '2016-11-11 10:11:11',
+                review_time: '2016-11-12 09:21:03',
+                msg: '45678842432',
+                point: '50'
+            }, {
+                status: 1,
+                goods: 'iTunes充值卡',
+                apply_time: '2016-11-11 10:11:11',
+                review_time: '2016-11-12 09:21:03',
+                msg: '45678842431',
+                point: '50'
+            }]
         }]
-    }, {
-        log_date: '2016-11-10',
-        log_content: [{
-            status: 1,
-            goods: 'iTunes充值卡',
-            apply_time: '2016-11-11 10:11:11',
-            review_time: '2016-11-12 09:21:03',
-            msg: '45678842432',
-            points: '50'
-        }, {
-            status: 1,
-            goods: 'iTunes充值卡',
-            apply_time: '2016-11-11 10:11:11',
-            review_time: '2016-11-12 09:21:03',
-            msg: '45678842431',
-            points: '50'
-        }]
-    }]
+    }
 
 redeem`兑换页`
 -
     {
         user_point: 600,
         exchage_content: [{
-            card_type: 12,
-            card_name: 'iTunes充值卡',
-            card_detail: [{
-                card_val: 50,
-                card_cost: 300
+                card_type: 12,
+                card_name: 'iTunes充值卡',
+                card_detail: [{
+                    card_val: 50,
+                    card_cost: 300
+                }, {
+                    card_val: 100,
+                    card_cost: 600
+                }, {
+                    card_val: 150,
+                    card_cost: 900
+                }]
             }, {
-                card_val: 100,
-                card_cost: 600
-            }, {
-                card_val: 150,
-                card_cost: 900
+                card_type: 23,
+                card_name: '亚马逊充值卡',
+                card_detail: [{
+                    card_val: 50,
+                    card_cost: 300
+                }, {
+                    card_val: 100,
+                    card_cost: 600
+                }]
             }]
-        }, {
-            card_type: 23,
-            card_name: '亚马逊充值卡',
-            card_detail: [{
-                card_val: 50,
-                card_cost: 300
-            }, {
-                card_val: 100,
-                card_cost: 600
-            }]
-        }]
     }
 
 share`分享页`
 -
-    {user_id: 'dasfg213221s'}
+    {user_id: 'dasfg213221s',fb_bind: "1"}
 
 task_detail`任务详情页`
 -
@@ -124,49 +126,50 @@ task_detail`任务详情页`
 
 task_friend`好友提成页`
 -
-    [{
-        log_date: '2016-11-11',
-        log_content: [{
-            task_id: 1,
-            friend_name: '_thor',
-            task_name: '英雄三国',
-            task_time: '2016-11-11 10:11:11',
-            app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
-            task_price: '50'
+    {
+        data: [{
+            log_date: '2016-11-11',
+            log_content: [{
+                task_id: 1,
+                friend_name: '_thor',
+                task_name: '英雄三国',
+                task_time: '2016-11-11 10:11:11',
+                app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
+                task_price: '50'
+            }, {
+                task_id: 2,
+                friend_name: '那是飞碟吗',
+                task_name: '英雄三国',
+                task_time: '2016-11-11 10:11:11',
+                app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
+                task_price: '50'
+            }, {
+                task_id: 3,
+                friend_name: '亚辉干嘛呢',
+                task_name: '英雄三国',
+                task_time: '2016-11-11 10:11:11',
+                app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
+                task_price: '50'
+            }]
         }, {
-            task_id: 2,
-            friend_name: '那是飞碟吗',
-            task_name: '英雄三国',
-            task_time: '2016-11-11 10:11:11',
-            app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
-            task_price: '50'
-        }, {
-            task_id: 3,
-            friend_name: '亚辉干嘛呢',
-            task_name: '英雄三国',
-            task_time: '2016-11-11 10:11:11',
-            app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
-            task_price: '50'
+            log_date: '2016-11-10',
+            log_content: [{
+                task_id: 3,
+                friend_name: '希特勒轻松地',
+                task_name: '英雄三国',
+                task_time: '2016-11-11 10:11:11',
+                app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
+                task_price: '50'
+            }, {
+                task_id: 3,
+                friend_name: '希特勒轻松地',
+                task_name: '英雄三国',
+                task_time: '2016-11-11 10:11:11',
+                app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
+                task_price: '50'
+            }]
         }]
-    }, {
-        log_date: '2016-11-10',
-        log_content: [{
-            task_id: 3,
-            friend_name: '希特勒轻松地',
-            task_name: '英雄三国',
-            task_time: '2016-11-11 10:11:11',
-            app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
-            task_price: '50'
-        }, {
-            task_id: 3,
-            friend_name: '希特勒轻松地',
-            task_name: '英雄三国',
-            task_time: '2016-11-11 10:11:11',
-            app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
-            task_price: '50'
-        }]
-    }]
-
+    }
 task_list`任务列表页`
 -
     {a: [{
@@ -277,44 +280,45 @@ task_list`任务列表页`
 
 task_records`任务提成页`
 -
-    [{
-        log_date: '2016-11-11',
-        log_content: [{
-            task_id: 1,
-            task_name: '英雄三国',
-            task_time: '2016-11-11 10:11:11',
-            app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
-            task_price: '50'
+    {
+        data:[{
+            log_date: '2016-11-11',
+            log_content: [{
+                task_id: 1,
+                task_name: '英雄三国',
+                task_time: '2016-11-11 10:11:11',
+                app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
+                task_price: '50'
+            }, {
+                task_id: 2,
+                task_name: '英雄三国',
+                task_time: '2016-11-11 10:11:11',
+                app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
+                task_price: '50'
+            }, {
+                task_id: 3,
+                task_name: '英雄三国',
+                task_time: '2016-11-11 10:11:11',
+                app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
+                task_price: '50'
+            }]
         }, {
-            task_id: 2,
-            task_name: '英雄三国',
-            task_time: '2016-11-11 10:11:11',
-            app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
-            task_price: '50'
-        }, {
-            task_id: 3,
-            task_name: '英雄三国',
-            task_time: '2016-11-11 10:11:11',
-            app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
-            task_price: '50'
+            log_date: '2016-11-10',
+            log_content: [{
+                task_id: 4,
+                task_name: '英雄三国',
+                task_time: '2016-11-11 10:11:11',
+                app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
+                task_price: '50'
+            }, {
+                task_id: 5,
+                task_name: '英雄三国',
+                task_time: '2016-11-11 10:11:11',
+                app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
+                task_price: '50'
+            }]
         }]
-    }, {
-        log_date: '2016-11-10',
-        log_content: [{
-            task_id: 4,
-            task_name: '英雄三国',
-            task_time: '2016-11-11 10:11:11',
-            app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
-            task_price: '50'
-        }, {
-            task_id: 5,
-            task_name: '英雄三国',
-            task_time: '2016-11-11 10:11:11',
-            app_icon: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg',
-            task_price: '50'
-        }]
-    }]
-
+    }
 wallet`我的钱包页`
 -
     {
