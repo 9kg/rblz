@@ -19,6 +19,7 @@ personal`个人中心页`
     {
         user_name: '亮亮',
         user_id: 'fhdjsa72dsa',
+        sfuid: 0,
         user_headImgUrl: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg'
     }
 

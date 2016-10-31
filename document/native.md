@@ -1,6 +1,6 @@
 `所有的原生对web的回调函数（callback）的传参必须是json对象(字典)格式。`
 
-`所有的对原生的请求如果数据异常且存在callback,那么原生需要callback_name({err_code:0});err_code: 0:网络异常，1:请求失败，2：服务端给原生的status不为10时，同时原生需要把服务端的msg带过来callback_name({err_code:2，msg:msg});。`
+`所有的对原生的请求如果数据异常且存在callback,那么原生需要callback_name({errcode:0});errcode: 0:网络异常，1:请求失败，2：服务端给原生的status不为10时，同时原生需要把服务端的msg带过来callback_name({errcode:2，msg:msg});。`
 
 - `1`.app调用web页面loading动画 `2`.app取消web页面loading动画
 
@@ -103,6 +103,20 @@
     callback_name({status:1});
 
     status: 1:成功;
+
+---
+
+
+- 填写邀请人ID (`inviter_id`是邀请人的ID，`callback`是回调函数名称)
+
+	native.get_inviter({
+		inviter_id: 'inviter_id',
+		callback: callback_name
+	});
+
+    callback_name({status:1});
+
+    status: 1:成功;  不是1:失败
 
 ---
 
