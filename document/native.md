@@ -124,9 +124,9 @@
 
 	progress(arg);
 
-	upload_fail();
+	download_fail();
 
-	native.upload();
+	native.download();
 
 ---
 
