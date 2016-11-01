@@ -120,14 +120,16 @@
 
 ---
 
-- `1`.app调用web页面下载进度条,参数`arg`是1到100之间的数字 `2`.app调用web页面下载失败对话框 `3`.web页面调用app下载静态文件(**这一块暂时这样，没确定**)
+- web页面加载完成会调用app端`download_start`方法
+	native('download_start',{
+		callback: callbackname
+	});
 
-	progress(arg);
-
-	download_fail();
-
-	native.download();
-
+	callbackname({
+		num: -1
+	});
 ---
+	回调内容num是`0`到`100`之间的数字,
+	** 如果失败  num传`-1` **
 
 - （其他遇到再加）
