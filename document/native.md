@@ -147,8 +147,8 @@
 	});
 ---
 
-- web页面通知安卓更新（只有安卓）
-	native('version_refresh');
+- web页面通知客户端更新（只有apple需要传参）
+	native('version_refresh', {apple_url: 'https://itunes.apple.com/cn/app/sui-youbi/id1149698186?mt=8'});
 ---
 	回调内容num是`0`到`100`之间的数字,
 	** 如果失败  num传`-1` **
