@@ -134,6 +134,22 @@
 		num: -1
 	});
 ---
+
+- web页面获取更新日志（只有安卓）
+	native('check_version',{
+		callback: callbackname
+	});
+
+	callbackname({
+		"status": 1,
+		"version": "1.2.0",
+		"changelogs": "更新说明：<br/>1、新增手机号登入<br/>2、新增手机号绑定解绑<br/>3、优化支付宝绑定及修改 <br/>4、任务界面优化更人性化 <br/>5、修复了少量BUG <br/>6、优化提现界面"
+	});
+---
+
+- web页面通知安卓更新（只有安卓）
+	native('version_refresh');
+---
 	回调内容num是`0`到`100`之间的数字,
 	** 如果失败  num传`-1` **
 

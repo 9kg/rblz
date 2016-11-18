@@ -21,6 +21,7 @@ personal`个人中心页`
         user_name: '亮亮',
         user_id: 'fhdjsa72dsa',
         sfuid: 0,
+        need_refresh: 1,
         user_headImgUrl: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg'
     }
 
@@ -103,7 +104,15 @@ redeem`兑换页`
 
 share`分享页`
 -
-    {user_id: 'dasfg213221s',fb_bind: "1"}
+    {
+        user_id: 'dasfg213221s',
+        fb_bind: "0",
+        content: [
+            "1最近、お小遣いが稼げるアプリ「遊びに来て」を試した、このURLからアプリをインストールして、私の招待用コード 'l7cu0fnyyj' を入力すると、友達コネを築いて、プレゼントをゲットできるよ！",
+            "2最近、お小遣いが稼げるアプリ「遊びに来て」を試した、このURLからアプリをインストールして、私の招待用コード 'l7cu0fnyyj' を入力すると、友達コネを築いて、プレゼントをゲットできるよ！",
+            "3最近、お小遣いが稼げるアプリ「遊びに来て」を試した、このURLからアプリをインストールして、私の招待用コード 'l7cu0fnyyj' を入力すると、友達コネを築いて、プレゼントをゲットできるよ！"
+        ]
+    }
 
 task_detail`任务详情页`
 -
