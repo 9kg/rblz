@@ -120,6 +120,7 @@
 	});
 
     callback_name({status:1});
+	这里如果是首页可以多传一个account参数  更新首页积分，也可以通过base.data_refresh方法刷新页面数据
 
     status: 1:成功;  不是1:失败
 
@@ -149,8 +150,14 @@
 
 - web页面通知客户端更新（只有apple需要传参）
 	native('version_refresh', {apple_url: 'https://itunes.apple.com/cn/app/sui-youbi/id1149698186?mt=8'});
----
+
 	回调内容num是`0`到`100`之间的数字,
 	** 如果失败  num传`-1` **
+---
+
+- 客户端刷新web页面数据
+	base.data_refresh(render_data);
+
+	纯粹的刷新页面会造成页面渲染，js语法解析执行等，开销太大，某些情况下，客户端需要刷新web页面的数据可以通过此方法完成，所有页面（download,download_loading页面除外）都可以通过这个方法刷新页面，render_data是base.render时传的数据格式类型
 
 - （其他遇到再加）
